@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "cochin";
+  src:url("fonts/cochin.ttc");
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+.bgvideo {
+  position: fixed;
+  width: 700%;
+  height: auto;
+}
 
 #header {
     position: fixed;
@@ -14,7 +24,7 @@
     height: auto;
 
     font-size: 50px;
-    font-family: 'helvetica';
+    font-family: 'cochin';
     line-height: 2em;
     color: black;
     text-align: center;
@@ -32,9 +42,28 @@
 }
 
   #header h1 { font-size: 100px; line-height: 2em; margin-bottom: 0 }
-  #subtitle { max-height: 32px }
-  #subtitle2 { max-height: 45px }
-  #subtitle3 { max-height: 50px }
+
+  #subtitle {
+    position: absolute;
+    top:195px;
+    left: 370px;
+    max-height: 32px
+  }
+
+  #subtitle2 {
+    position: absolute;
+    top: 185px;
+    left: 780px;
+    max-height: 45px;
+
+  }
+
+  #subtitle3 {
+    max-height: 50px;
+    position: absolute;
+    top: 180px;
+    left: 570px;
+  }
 
 
 @media screen and (max-width:800px) {
@@ -42,9 +71,4 @@
   #subtitle { max-height: 4.5vw }
   #subtitle2 { max-height: 7.5vw }
   #subtitle3 { max-height: 6vw }
-}
-
-#subtitle:hover{
-  cursor: url(images/yellow.png);
-
 }
