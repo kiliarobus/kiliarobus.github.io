@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 20px;
+}
+
+* { cursor: url(images/purple.png), auto }
+a:hover { cursor: url(images/yellow.png), auto }
+
+
+#header {
+    z-index: 2;
+    position: fixed;
+
+    top: -20px;
+    left: 0;
+
+    width: 100vw;
+    height: auto;
+
+    font-size: 17px;
+    font-family: 'helvetica';
+    line-height: 2em;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    cursor: url("images/purple.png");
+}
+
+#subtitle {
+  position: absolute;
+  width: 70px;
+  top: 60px;
+  left: 600px;
+  cursor: url("images/purple.png");
+}
+
+#subtitle:hover{
+  cursor: url("images/yellow.png");
+}
+
+#header:hover {
+    cursor:url("images/yellow.png");
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 280%;
+  height: auto;
+  margin: 0;
+  left: 0;
+  animation: 15s slider infinite;
+}
+
+#slider figure img {
+  width: 15%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left:-100%;
+  }
+  45% {
+    left:-100%;
+  }
+  50% {
+    left:-200%;
+  }
+
+}

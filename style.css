@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+#header {
+    position: fixed;
+
+    top: 250px;
+    left: 0px;
+
+    width: 100vw;
+    height: auto;
+
+    font-size: 50px;
+    font-family: 'helvetica';
+    line-height: 2em;
+    color: black;
+    text-align: center;
+}
+
+#header:hover {
+    cursor:url("images/yellow.png");
+}
+
+#works-container {
+  padding-top: 100px;
+  width: 50vw;
+  height: auto;
+  text-align: center;
+}
+
+  #header h1 { font-size: 100px; line-height: 2em; margin-bottom: 0 }
+  #subtitle { max-height: 32px }
+  #subtitle2 { max-height: 45px }
+  #subtitle3 { max-height: 50px }
+
+
+@media screen and (max-width:800px) {
+  #header h1 { font-size: 12.5vw; line-height: 2em; margin-bottom: 0 }
+  #subtitle { max-height: 4.5vw }
+  #subtitle2 { max-height: 7.5vw }
+  #subtitle3 { max-height: 6vw }
+}
+
+#subtitle:hover{
+  cursor: url(images/yellow.png);
+
+}

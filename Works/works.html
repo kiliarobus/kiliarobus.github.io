@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Kilia Robustella </title>
+
+  <link rel="stylesheet" type="text/css" href="works.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $( function( ) {
+      var workitems = $( '.work-item' );
+
+      var workfilters = $( '.filters > a ');
+      var active_filter = 'all';
+
+      function filterWorks( ) {
+        var filter_link = $( this );
+        var filter_value = filter_link.data( 'filter' );
+
+//        workitems.animate( { 'opacity': 0 }, 250 )
+//                 .css( 'pointer-events', 'none' );
+        workitems.hide( );
+
+        var filtered_items = workitems.find( filter_value );
+        $( filter_value ).show( );
+//                         .stop( true )
+//                         .animate( { 'opacity': 1 }, 250 )
+//                         .css( 'pointer-events', 'all' );
+
+        workfilters.removeClass( 'active' );
+        filter_link.addClass( 'active' );
+      }
+      workfilters.click( filterWorks );
+
+      function addDynamicOffset( ) {
+          var workitem = $( this );
+          var vert_positions = [ 'top', 'middle', 'bottom' ];
+          var vert_position_index = Math.floor( Math.random( ) * vert_positions.length );
+          var vert_position = vert_positions[ vert_position_index ];
+
+          var hor_offset = Math.floor( Math.random( ) * 100 - 50 );
+          var ver_offset = Math.floor( Math.random( ) * 100 - 50 );
+
+          if ( workitems.index( workitem ) < 4 && ver_offset < 0 ) ver_offset *= -1;
+
+
+          workitem.css( { 'vertical-align': vert_position,
+                          'transform': 'translate(' + hor_offset + '%,' + ver_offset + '%)' } );
+      }
+
+      workitems.each( addDynamicOffset );
+    } );
+  </script>
+</head>
+
+<style>
+html, body{
+  cursor: url("images/purple.png"), auto;
+}
+</style>
+
+<body>
+
+  <div class = "header_background" id="header">
+    <h1 class = "header_text"><a href="../START/index.html">Kilia Robustella</a></h1>
+    <img class = "header_text" id="subtitle" class="works" src="images/works.png">
+    <p class="filters" class = "header_text">
+      <a data-filter=".carpet, .publications, .animations, .photography, .typedesign, .paintings, .risoprints, .scarves" class="active">Show all</a>
+      <a data-filter=".carpet">Carpets</a>
+      <a data-filter=".publications">Publications</a>
+      <a data-filter=".animations">Animations</a>
+      <a data-filter=".photography">Photography</a>
+      <a data-filter=".typedesign">Type</a>
+      <a data-filter=".paintings">Paintings</a>
+      <a data-filter=".risoprints">Risoprints</a>
+      <a data-filter=".scarves">Scarves</a>
+    </p>
+  </div>
+
+  <div id="works-container">
+
+    <div class="work-item publications" data-title="IN DESCARTES WE TRUST">
+      <img class="work-image" src="images/animals1.jpg">
+    </div>
+
+    <div class="work-item publications" data-title="ART WILL CURE">
+      <img class="work-image" src="images/art.jpeg">
+    </div>
+
+    <div class="work-item publications" data-title="ANIMAL FARM">
+      <img class="work-image" src="images/animalfarm.png">
+    </div>
+
+    <div class="work-item publications" data-title="THE UNBEARABLE LIGHTNESS OF BEING">
+      <img class="work-image" src="images/tulobcover.jpg">
+    </div>
+
+    <div class="work-item publications" data-title="THE GOOD PEOPLE - THE HOLY BIBLE">
+      <img class="work-image" src="images/TGP.png">
+    </div>
+
+    <div class="work-item carpet" data-title="FACE WITH HAND">
+      <img class="work-image" src="images/rugface.png">
+    </div>
+
+    <div class="work-item carpet" data-title="COLOR CONFLICT">
+      <img class="work-image" src="images/colorconflict.png">
+    </div>
+
+    <a href="../Animation/Animation.html" class="work-item animations" data-title="BLA BLA BLA" >
+      <img class="work-image" src="images/animation.png">
+    </a>
+
+    <a href="../colors/colors.html" class="work-item publications" data-title="COLOR PROJECT">
+      <img class="work-image" src="images/colorscover.png">
+    </a>
+
+    <a href="../riso/riso.html" class="work-item risoprints" data-title="RISO EXPERIMENTS">
+      <img class="work-image" src="images/riso5.png">
+    </a>
+
+    <a href="../PAINTING3/painting1.html" class="work-item paintings" data-title="PAINTING 1">
+      <img class="work-image" src="images/painting1.png">
+    </a>
+
+    <a href="../PAINTING3/painting2.html" class="work-item paintings" data-title="PAINTING 2">
+      <img class="work-image" src="images/painting2.png">
+    </a>
+
+    <a href="../PAINTING3/painting3.html" class="work-item paintings" data-title="PAINTING 3">
+      <img class="work-image" src="images/painting3.png">
+    </a>
+
+    <div class="work-item photography" data-title="PHOTOGRAPHY">
+      <img class="work-image" src="images/orange.jpg">
+    </div>
+
+    <div class="work-item scarves" data-title="SCARF 1">
+      <img class="work-image" src="images/scarf1a.jpg">
+    </div>
+
+   </div>
+
+
+
+<!-- <img class="circle1" src="images/circle1.png"> -->
+<!-- <img class="circle2" src="images/circle2.png"> -->
+
+</body>
+</html>
