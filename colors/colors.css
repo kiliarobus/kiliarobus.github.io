@@ -6,6 +6,9 @@
 * { cursor: url(images/purple.png), auto }
 a:hover { cursor: url(images/yellow.png), auto }
 
+body {
+  background-color: rgb(217, 204, 249);
+}
 
 #header {
     z-index: 2;
@@ -18,7 +21,7 @@ a:hover { cursor: url(images/yellow.png), auto }
     height: auto;
 
     font-size: 17px;
-    font-family: 'helvetica';
+    font-family: 'cochin';
     line-height: 2em;
     color: black;
     font-weight: bold;

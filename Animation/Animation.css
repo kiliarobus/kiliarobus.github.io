@@ -9,7 +9,7 @@
 a:hover { cursor: url(images/yellow.png), auto }
 
 .animation {
-  background: url(Images/Blabla.mp4);
+  background: url(../Images/Blabla.mp4);
   background-repeat: no-repeat;
   background-size: 50%;
   position: fixed;
@@ -39,7 +39,7 @@ video {
     height: auto;
 
     font-size: 17px;
-    font-family: 'helvetica';
+    font-family: 'cochin';
     line-height: 2em;
     color: black;
     font-weight: bold;

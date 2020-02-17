@@ -6,7 +6,12 @@
 * { cursor: url(images/purple.png), auto }
 a:hover { cursor: url(images/yellow.png), auto }
 
-
+body {
+  background-image: url(../images/stillwater.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
 
 #header {
     z-index: 2;
