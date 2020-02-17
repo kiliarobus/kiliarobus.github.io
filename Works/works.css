@@ -29,7 +29,7 @@ a:hover { cursor: url(images/yellow.png), auto }
   z-index: 1;
   margin: 25px auto 0;
   padding: 0px;
-  background: rgb(255, 252, 0);
+  background: white;
   height: auto;
   opacity: 0.9;
   width: 100%;
