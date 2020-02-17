@@ -73,6 +73,7 @@ body {
   margin-bottom: 20px;
   color: black;
   font-family: 'helvetica';
+  font-weight: bold;
   display: inline-block;
   vertical-align: middle;
   /* border: 1px dotted #eee; */
