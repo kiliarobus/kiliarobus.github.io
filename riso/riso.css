@@ -69,13 +69,16 @@ a:hover { cursor: url(images/yellow.png), auto }
     left: 0;
   }
   35% {
-    left:-100%;
+    left:-70%;
   }
   55% {
     left:-100%;
   }
   65% {
-    left:-200%;
+    left:-100%;
+  }
+  90% {
+    left:-150%;
   }
 
 
