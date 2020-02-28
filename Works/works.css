@@ -6,13 +6,7 @@
 * { cursor: url(images/purple.png), auto }
 a:hover { cursor: url(images/yellow.png), auto }
 
-body {
-  background-image: url(../images/stillwater.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  background opacity: 0.2;
-}
+
 
 #header {
     z-index: 2;
@@ -24,7 +18,7 @@ body {
     width: 100vw;
     height: auto;
 
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'cochin';
     line-height: 2em;
     color: black;
