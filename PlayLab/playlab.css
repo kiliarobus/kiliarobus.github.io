@@ -3,8 +3,8 @@
   padding: 10px;
 }
 
-* { cursor: url(images/purple.png), auto }
-a:hover { cursor: url(images/yellow.png), auto }
+* { cursor: url(Images/purple.png), auto }
+a:hover { cursor: url(Images/yellow.png), auto }
 
 
 #header {
@@ -23,7 +23,7 @@ a:hover { cursor: url(images/yellow.png), auto }
     color: black;
     font-weight: bold;
     text-align: center;
-    cursor: url("images/purple.png");
+    cursor: url("Images/purple.png");
 }
 
 #subtitle {
@@ -37,7 +37,7 @@ a:hover { cursor: url(images/yellow.png), auto }
 
 
 #header:hover {
-    cursor:url("images/yellow.png");
+    cursor:url("Images/yellow.png");
 }
 
 #slider {
@@ -51,11 +51,11 @@ a:hover { cursor: url(images/yellow.png), auto }
   margin: 0;
   top: 80px;
   left: 0;
-  animation: 20s slider infinite;
+  animation: 15s slider infinite;
 }
 
 #slider figure img {
-  width: 10%;
+  width: 20%;
   float: left;
 }
 
@@ -63,20 +63,13 @@ a:hover { cursor: url(images/yellow.png), auto }
   0% {
     left: 0;
   }
-  15% {
+
+  55% {
     left: 0;
   }
-  35% {
-    left:-70%;
-  }
-  55% {
-    left:-100%;
-  }
-  65% {
-    left:-100%;
-  }
+
   90% {
-    left:-150%;
+    left:-60%;
   }
 
 
