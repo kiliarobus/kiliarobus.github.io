@@ -6,7 +6,6 @@
 * { cursor: url(images/purple.png), auto }
 a:hover { cursor: url(images/yellow.png), auto }
 
-
 #header {
     z-index: 2;
     position: fixed;
@@ -52,11 +51,18 @@ a:hover { cursor: url(images/yellow.png), auto }
   top: 80px;
   left: 0;
   animation: 20s slider infinite;
+  white-space: nowrap;
 }
 
 #slider figure img {
   width: 10%;
   float: left;
+  transition: height .25s;
+}
+#slider figure img.zoomed-in {
+  width: auto !important;
+  height: 800px !important;
+  max-height: calc(100vh - 100px - 2em);
 }
 
 @keyframes slider {

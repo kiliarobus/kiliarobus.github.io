@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+* { cursor: url(images/purple.png), auto }
+a:hover { cursor: url(images/yellow.png), auto }
+
+body {
+  background-image: url(../images/stillwater.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.painting {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.painting:hover {
+  box-shadow: 0 0 20px #ccc;
+}
+
+.painting img {
+  position: absolute;
+  left: 50%;
+  height: auto;
+  margin-bottom: 2em;
+  transform: translateX(-50%);
+  transition: width .25s;
+  cursor: zoom-in;
+}
+.painting img.zoomed-in {
+  width: 800px !important;
+  max-width: calc(100% - 2em);
+  height: auto;
+  cursor: zoom-out;
+}
+
+#header {
+    z-index: 2;
+    position: fixed;
+
+    top: 10px;
+    left: 0;
+
+    width: 100vw;
+    height: auto;
+
+    font-size: 17px;
+    font-family: 'cochin';
+    line-height: 2em;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    cursor: url("images/purple.png");
+}
+
+#subtitle {
+  position: absolute;
+  width: 70px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: url("images/purple.png");
+}
+
+#subtitle:hover{
+  cursor: url("images/yellow.png");
+}
+
+#header:hover {
+    cursor:url("images/yellow.png");
+}
